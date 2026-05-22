@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  background: #f7f5ef;
+  color: #151715;
+  font-family: Inter, Arial, sans-serif;
+}
+
+.settings {
+  width: min(560px, calc(100vw - 40px));
+  margin: 56px auto;
+}
+
+h1 {
+  margin: 0 0 8px;
+  font-size: 28px;
+}
+
+.muted {
+  margin: 0 0 24px;
+  color: #5f665f;
+  line-height: 1.45;
+}
+
+label {
+  display: grid;
+  gap: 8px;
+  margin: 18px 0;
+  font-weight: 720;
+}
+
+select, textarea {
+  height: 42px;
+  border: 1px solid #b9beb7;
+  border-radius: 6px;
+  padding: 0 12px;
+  font: inherit;
+  background: #fff;
+}
+
+textarea {
+  min-height: 92px;
+  padding: 10px 12px;
+  line-height: 1.35;
+  resize: vertical;
+}
+
+.small {
+  margin-bottom: 12px;
+  font-size: 13px;
+}
+
+.assistant-targets {
+  border: 1px solid #d0d4cc;
+  border-radius: 8px;
+  margin: 22px 0 0;
+  padding: 14px 16px 12px;
+}
+
+.assistant-targets legend {
+  padding: 0 6px;
+  font-weight: 760;
+}
+
+.checkbox-row {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin: 10px 0;
+}
+
+.checkbox-row input {
+  width: 16px;
+  height: 16px;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+button {
+  height: 40px;
+  border: 0;
+  border-radius: 6px;
+  padding: 0 14px;
+  cursor: pointer;
+  font-weight: 760;
+}
+
+#save {
+  background: #d7422d;
+  color: #fff;
+}
+
+#reset-prompt {
+  background: #e1ddd3;
+  color: #20231f;
+}
+
+.status {
+  min-height: 20px;
+  color: #275d42;
+}

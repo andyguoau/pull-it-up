@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pull It Up Settings</title>
+    <link rel="stylesheet" href="options.css">
+  </head>
+  <body>
+    <main class="settings">
+      <h1 id="options-heading">Pull It Up</h1>
+      <p id="options-desc" class="muted">Choose which logged-in assistant web app Pull It Up should use. No API key is required.</p>
+
+      <label>
+        <span id="language-label">Language / 语言</span>
+        <select id="extension-language">
+          <option value="en">English</option>
+          <option value="zh">中文</option>
+        </select>
+      </label>
+
+      <fieldset class="assistant-targets">
+        <legend id="options-legend">Assistant target</legend>
+        <p id="options-hint" class="muted small">You can select one or both. Stay logged in to the selected assistant in Chrome.</p>
+        <label class="checkbox-row">
+          <input id="target-chatgpt" type="checkbox" value="chatgpt">
+          <span>ChatGPT web</span>
+        </label>
+        <label class="checkbox-row">
+          <input id="target-gemini" type="checkbox" value="gemini">
+          <span>Gemini web</span>
+        </label>
+      </fieldset>
+
+      <label>
+        <span id="youtube-prompt-label">YouTube prompt</span>
+        <textarea id="youtube-prompt" rows="4" autocomplete="off"></textarea>
+      </label>
+
+      <label>
+        <span id="x-prompt-label">X prompt</span>
+        <textarea id="x-prompt" rows="4" autocomplete="off"></textarea>
+      </label>
+
+      <div class="actions">
+        <button id="save" type="button">Save</button>
+        <button id="reset-prompt" type="button">Reset prompt</button>
+      </div>
+
+      <p id="status" class="status"></p>
+    </main>
+    <script src="options.js"></script>
+  </body>
+</html>
